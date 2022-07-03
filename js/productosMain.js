@@ -22,8 +22,34 @@ function botonCompra(){
     const botonCompra = document.getElementsByClassName ("principal__productos__btn__btncom");
     for (const btncom of botonCompra){
     btncom.addEventListener("click",()=>{
-        alert ("gracias por su compra")
+        alertaCompra()
     })}}
+
+                function alertaCompra(){
+            Swal.fire({
+                title: 'Desea realizar la compra?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                color:'#FFE400',
+                background:'#066163',
+                iconColor: '#FFE400',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                cancelButtonText:'Cancelar',
+                confirmButtonText: 'Efectuar Compra!'
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        color:'#FFE400',
+                        background:'#066163',
+                        iconColor: '#FFE400',
+                        title:'Su Compra fue Exitosa!',
+                        text:'Muchas gracias por elegirnos',
+                        icon:'success',
+                        confirmButtonColor: '#3085d6',})
+                    }})
+                }
 
 // BOTON SUBIR AL CARRITO EN EL MAIN
 
@@ -31,17 +57,17 @@ function botonCarro(){
     const botonCarro = document.getElementsByClassName ("principal__productos__btn__btncar");
         for (const btncar of botonCarro){
         btncar.addEventListener("click",()=>{
-        alertaCompra()
+        alertaCarro()
         })}}
 
-        function alertaCompra(){
+        function alertaCarro(){
             Swal.fire({
                 color:'#FFE400',
                 background:'#066163',
                 iconColor: '#FFE400',
                 position: 'top-end',
                 icon: 'success',
-                title: `Agregaste el prodructo al carro`+ nombre(),
+                title: `Agregaste el prodructo al carro`,
                 showConfirmButton: false,
                 timer: 1500
                 })
@@ -56,14 +82,3 @@ function botonCarro(){
         // }
 // DAR BIENVENIDA AL USUARIO 
 
-function darBienvenida(){
-
-    let bienvenido=JSON.parse(localStorage.getItem("usuario"))
-    if (bienvenido!==[]&&bienvenido!==null){
-        let divLogear=document.getElementsByClassName("encabezado__logear")[0]
-        let textoBienvenido=document.createElement("h2")
-        textoBienvenido.innerText=`Bienvenido ${bienvenido.nombre}` 
-        divLogear.appendChild(textoBienvenido)
-        // cambioLogear()
-    }
-}

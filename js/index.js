@@ -7,7 +7,7 @@ function funcionesMain(){
     cargarProducto (productos);
     botonCompra();
     botonCarro();
-    darBienvenida ();
+
 }
 funcionesCarro()
 function funcionesCarro(){
@@ -16,7 +16,7 @@ function funcionesCarro(){
     contadorProducto()
 }
 
-PAGINACION
+// PAGINACION
 botonesPaginas()
 function botonesPaginas(){
     const btn1=document.getElementsByClassName("encabezado__pagina__btn")[0]
@@ -48,7 +48,7 @@ function filtarCategorias1(){
     }
 
 
-    filtarCategorias2()
+filtarCategorias2()
 function filtarCategorias2(){
         const cat5=document.getElementsByClassName("dropdown-item")[4];
         const cat6=document.getElementsByClassName("dropdown-item")[5];
