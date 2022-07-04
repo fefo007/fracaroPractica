@@ -38,13 +38,10 @@ function quitarProducto(idProduc){
     }
 
 
-
-
 function vaciarCarrito(){
     const botonVaciar=document.getElementsByClassName("botonescarrito__vaciarlo")[0]
     botonVaciar.addEventListener ("click",()=>{
         carrito.productos=[];
-        // localStorage.setItem('carrito',JSON.stringify(carrito)) ASI O CON LA FUNCION???
         vaciarStorageCarrito();
         mostrarEnCarro();
         contadorProducto()
@@ -75,7 +72,13 @@ function vaciarCarrito(){
             
                 carro.appendChild(productoEnCarro);
         })}
-    
+
+comprarCarro();
+function comprarCarro(){
+    const botonCompra=document.getElementsByClassName("botonescarrito__comprar")[0]
+    botonCompra.addEventListener ("click",()=>{
+        alertaCompra();}
+    )}
 
 
 function contadorProducto(){

@@ -33,6 +33,17 @@ function botonesPaginas(){
     })
 }
 
+function mostrarP1(){
+    
+}
+
+
+
+
+
+
+
+
 // FILTRAR LAS CATEGORIAS
 
 filtarCategorias1()

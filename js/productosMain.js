@@ -22,7 +22,7 @@ function botonCompra(){
     const botonCompra = document.getElementsByClassName ("principal__productos__btn__btncom");
     for (const btncom of botonCompra){
     btncom.addEventListener("click",()=>{
-        alertaCompra()
+        alertaCompra();
     })}}
 
                 function alertaCompra(){
