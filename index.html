@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="./bootstrap/js/bootstrap.min.js"></script>
+    <script defer src="./js/buscador.js"></script>
+    <script defer src="./js/productos.js"></script>
     <script defer src="./js/productosMain.js"></script>
     <script defer src="./js/api.js"></script>
     <script defer src="./js/logear.js"></script>
-    <script defer src="./js/productos.js"></script>
     <script defer src="./js/carrito.js"></script>
     <script defer src="./js/index.js"></script>
     <link rel="shortcut icon" href="./complementos/logos/icono.png" type="image/x-icon">
@@ -41,10 +42,10 @@
                 <button  class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"  ><img height="50" src="./complementos/logos/carrito.webp" alt="carro"><span class="contadorCarrito"></span></button>
             </div>
             <div class="principal__costado__buscador">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                <div class="d-flex">
+                    <input class="campoBuscar form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btnBuscar  btn-outline-success" type="submit">Buscar</button>
+                </div>
             </div>
             <!-- MENU EN EL ASIDE -->
             <section class="principal__costado__menu">

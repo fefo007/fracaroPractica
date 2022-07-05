@@ -3,11 +3,10 @@
 
 funcionesMain()
 function funcionesMain(){
-    
     cargarProducto (productos);
     botonCompra();
     botonCarro();
-
+    buscador();
 }
 funcionesCarro()
 function funcionesCarro(){
@@ -72,18 +71,16 @@ function filtarCategorias2(){
         }
 
     function mostrarPlataforma (nombrePlataforma){
-        const productosPlataforma=productos.filter(producto=>producto.plataforma===nombrePlataforma)
+        const productosPlataforma=productos.filter((producto)=>producto.plataforma===nombrePlataforma)
         const paginaPlataforma=document.getElementsByClassName("principal__seccion")[0]
         paginaPlataforma.innerHTML=""
-        console.log(productosPlataforma)
         cargarProducto(productosPlataforma)
     };
 
     function mostrarCategoria (nombreCategoria){
-        const productoCategoria=productos.filter(producto=>producto.categoria===nombreCategoria)
+        const productoCategoria=productos.filter((producto)=>producto.categoria===nombreCategoria)
         const paginaCategoria=document.getElementsByClassName("principal__seccion")[0]
         paginaCategoria.innerHTML=""
-        console.log(productoCategoria)
         cargarProducto(productoCategoria)
     };
 

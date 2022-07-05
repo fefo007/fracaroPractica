@@ -21,7 +21,6 @@ function registro (){
     function almacenarDatos(){
         let nom=document.getElementsByClassName("encabezado__logear__campoN")[0].value
         let clav=document.getElementsByClassName("encabezado__logear__campoC")[0].value
-        
         const usuario =new Usuario(nom,clav);
         localStorage.setItem("usuario",JSON.stringify(usuario))
     }
