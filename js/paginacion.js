@@ -20,6 +20,5 @@ function botonesPaginas(){
             const productosBusqueda=productos.slice(principio,final)
             const paginaResultado=document.getElementsByClassName("principal__seccion")[0]
             paginaResultado.innerHTML=""
-            console.log(productosBusqueda)
             cargarProducto(productosBusqueda)
     }

@@ -73,12 +73,5 @@ function botonCarro(){
                 })
         }
         
-        // function nombre(idProducto){
-        //     productos.forEach(producto=>{
-        //         const encontrar=productos.find(producto=>producto.id==idProducto);
-                
-        //         console.log(encontrar)
-        //     })
-        // }
-// DAR BIENVENIDA AL USUARIO 
+
 

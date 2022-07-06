@@ -11,9 +11,10 @@
 
     #encabezado {display:grid;grid-template-columns: repeat(5,20%);grid-template-rows:150px;align-items:center;background-image: url(../complementos/imagenes/fondoGamer.jpg);background-size:auto;border-bottom-color: black;border-bottom-style: solid;border-bottom-width: 8px;line-height: 8px;overflow-x: hidden;}
     .encabezado__logo {display: flex;margin-left:5vw;}
-    .encabezado__titulo {grid-column:2/5;display: flex;flex-direction: row;justify-content: center;color: #CDBE78;}
+    .encabezado__titulo {grid-column:2/5;display: flex;flex-direction: row;justify-content: center;color: #CDBE78;text-transform: uppercase;}
     .encabezado__logear {display: flex;grid-column:5/6;flex-direction: column;}
     .encabezado__cambiarLogear{display: flex;grid-column:5/6;flex-direction: column;}
+    .encabezado__logear__usuario{color: #CDBE78;}
     .encabezado__logear__campoN{display:flex;border-width: 4px;border-radius:8px;border-color: black;border-style: solid;width:12vw;padding-left: 5px;}
     .encabezado__logear__campoC {display: flex;border-width: 4px;border-radius:8px;border-color: black;border-style: solid;width:12vw;padding-left: 5px;}
     .encabezado__logear__boton{display:flex;border-radius: 5px;background-color:#066163;border-color: black;color:#FFE400;text-transform:capitalize;height:1.5vw;width:5vw;cursor: pointer;margin:5px 20px;justify-content: center;padding-top:3px;}
@@ -26,7 +27,7 @@
     .principal__costado__carro {display: flex;flex-direction: row;justify-content: center;margin-bottom: 10px;}
     .principal__costado__buscador{display: flex;flex-direction: row;margin-bottom: 10px;margin-left:10px;}
     .principal__costado__menu{display: flex;flex-direction: column;margin-left: 10px;}
-    .principal__costado__productos__tienda{display: flex;border-bottom: 5px;border-bottom-color: black;border-bottom-style: dashed;}
+    .principal__costado__productos__tienda{display: flex;flex-direction: row;justify-content: space-between;background-color:white;border: 4px;border-color:#F15412;border-style:dotted;}
     .principal__seccion{display: flex;grid-column: 1/4;flex-wrap: wrap;justify-content:space-around;}
     .principal__productos {display: flex;flex-direction: column;align-items:center;justify-content: space-between;border-radius:5px;border-width:10px;border-color:#396EB0;border-style: solid;overflow-x: hidden;background-color:whitesmoke;margin:8px;height:400px;flex-wrap:wrap;}
     .principal__productos__parrafos3 {display:flex;flex-direction: row;}
@@ -35,8 +36,15 @@
     .principal__productos__btn__btncom{margin:5px 10px;border-radius: 5px;background-color:#066163;border-color: black;color:#FFE400;font-size:10px;font-weight:lighter;height:2vw;width:8vw;cursor: pointer;text-transform: uppercase;}
     .principal__productos__btn__btncar{margin:5px 10px;border-radius: 5px;background-color: #066163;border-color: black;color:#FFE400;font-size:10px;font-weight:lighter;height:2vw;width:8vw;cursor: pointer;text-transform: uppercase;}
     .encabezado__pagina {display: flex;flex-direction: row;grid-column: 2/3;justify-content: center;}
-    .encabezado__pagina__btn {width:60px;height:30px ;margin-bottom: 10px;border-radius: 20px;margin-left:5px;}
+    .encabezado__pagina__btn {width:60px;height:30px ;margin-bottom: 10px;border-radius: 20px;margin-left:5px;background-color: #396EB0;color:white}
     .encabezado__pagina__btn:hover{background-color: #F15412;}
+    #offcanvasRightLabel{color:white;text-transform: uppercase;}
+    .offcanvas-header{background-color:#F15412 }
+    .offcanvas-body{background-color: #066163;}
+    .botonescarrito{background-color: #066163;display: flex;flex-direction: row;justify-content: space-evenly;justify-items: center;}
+    .botonescarrito__vaciarlo{border-radius: 6px;background-color: #F15412;color: white;margin-bottom:20px;}
+    .botonescarrito__comprar{border-radius: 6px;background-color: #F15412;color: white;margin-bottom:20px;}
+    #carouselExampleControls{margin-top: 50px;}
 
     #pie{display:grid;grid-template-rows:1fr;grid-template-columns:100% ;justify-items: center ;background-color:#066163;align-items: stretch;width: 100%;overflow-x: hidden;}
     .pie__menus {list-style: none;display: flex;flex-direction: row; justify-content:space-around;right:10px;cursor: pointer;}
