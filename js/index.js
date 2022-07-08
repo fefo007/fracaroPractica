@@ -23,8 +23,6 @@ function funcionesCarro(){
     vaciarCarrito();
     // RETIRA DEL STORAGE EL CARRO GUARDADO POR EL USUARIO
     retirarCarritoStorage();
-    // CONTADOR DE PRODUCTOS PUESTOS EN EL CARRO
-    contadorProducto();
 }
 
 function titulo(){

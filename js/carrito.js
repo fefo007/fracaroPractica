@@ -68,7 +68,6 @@ function vaciarCarrito(){
                                                         <p class="principal__costado__productos__tienda__parrafos__2">${precio}</p></div>
                                                         <div class="principal__costado__productos__tienda__boton"><button class="principal__costado__productos__tienda__boton__1" onclick="quitarProducto('${id}') "><img height="20" src="./complementos/logos/borrar.webp" alt="borrar"></button></div>`)
                 carro.appendChild(productoEnCarro);
-                
         })
     }
 
