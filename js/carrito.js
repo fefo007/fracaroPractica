@@ -53,7 +53,7 @@ function vaciarCarrito(){
         let carrito=JSON.parse(localStorage.getItem("carrito"))
         if(carrito!==[]&&carrito!==null){
             recargarCarro(carrito)
-            
+            comprarCarro();
         }
     }
         function recargarCarro(carrito){
@@ -72,7 +72,7 @@ function vaciarCarrito(){
         })
     }
 
-comprarCarro();
+
 function comprarCarro(){
     const botonCompra=document.getElementsByClassName("botonescarrito__comprar")[0]
     botonCompra.addEventListener ("click",()=>{

@@ -5,27 +5,31 @@ funcionesMain()
 function funcionesMain(){
     // MOSTRAR LOS PRIMEROS 9
     mostrarP(0,9);
-    // COMPRAR DIRECTAMENTE
-    botonCompra();
-    // ENVIAR AL CARRITO
-    botonCarro();
     // BUSCAR PRODUCTOS
     buscador();
     // FILTRAR LAS CATEGORIAS
-    filtarCategorias1()
-    filtarCategorias2()
+    filtarCategorias1();
+    filtarCategorias2();
     // PAGINACION
-    botonesPaginas()
+    botonesPaginas();
     // COMENTARIOS EN ASIDE
-    usarApi()
+    usarApi();
+    // RECARGAR
+    titulo();
 }
 funcionesCarro()
 function funcionesCarro(){
     // VACIA TODO EL CARRO
-    vaciarCarrito()
+    vaciarCarrito();
     // RETIRA DEL STORAGE EL CARRO GUARDADO POR EL USUARIO
-    retirarCarritoStorage()
+    retirarCarritoStorage();
     // CONTADOR DE PRODUCTOS PUESTOS EN EL CARRO
-    contadorProducto()
+    contadorProducto();
 }
 
+function titulo(){
+    const titulo=document.getElementsByClassName("encabezado__titulo")[0];
+    titulo.addEventListener("click",()=>{
+        location.reload();
+    })
+}

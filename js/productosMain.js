@@ -15,6 +15,10 @@ function cargarProducto(productos)
                             <div class="principal__productos__btn"><button class="principal__productos__btn__btncom">Comprar</button>
                             <button class="principal__productos__btn__btncar" onclick="agregarProducto('${id}')">+Carrito</button></div>`;
     seccion.appendChild(unProducto);
+    // COMPRAR DIRECTAMENTE
+    botonCompra();
+    // ENVIAR AL CARRITO
+    botonCarro();
 })};
 
 // BOTON COMPRAR EN EL MAIN

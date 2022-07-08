@@ -10,7 +10,7 @@
 
     #encabezado {display:grid;grid-template-columns: repeat(5,20%);grid-template-rows:150px;align-items:center;background-image: url(../complementos/imagenes/fondoGamer.jpg);background-size:auto;border-bottom-color: black;border-bottom-style: solid;border-bottom-width: 8px;line-height: 8px;overflow-x: hidden;}
     .encabezado__logo {display: flex;margin-left:5vw;}
-    .encabezado__titulo {grid-column:2/5;display: flex;flex-direction: row;justify-content: center;color: #CDBE78;text-transform: uppercase;}
+    .encabezado__titulo {grid-column:2/5;display: flex;flex-direction: row;justify-content: center;color: #CDBE78;text-transform: uppercase;cursor: pointer;}
     .encabezado__logear {display: flex;grid-column:5/6;flex-direction: column;}
     .encabezado__cambiarLogear{display: flex;grid-column:5/6;flex-direction: column;}
     .encabezado__logear__usuario{color: #CDBE78;}
