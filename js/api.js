@@ -30,10 +30,9 @@ function datoApi(dato){
         const usuarioComentario = document.createElement("div")
         usuarioComentario.setAttribute("class","comentarios")
         usuarioComentario.innerHTML=(`<img class="imagen" height="60" src="${results.picture.medium}" alt="">
-                                                <div class="parrafos"><p class="parrafos__1">${results.name.first}</p>
-                                                <p class="parrafos__2">${results.name.last}</p>
-                                                <p class="parrafos__3">ACA va el comentario</p></div>
-                                                `)
+                                    <div class="parrafos"><p class="parrafos__1">${results.name.first} ${results.name.last}</p>
+                                    <p class="parrafos__2">ACA va el comentario</p></div>
+                                    `)
         slideComentarios.appendChild(usuarioComentario);
     };
 
@@ -42,10 +41,9 @@ function datoApi(dato){
             const usuarioComentario = document.createElement("div")
             usuarioComentario.setAttribute("class","comentarios")
             usuarioComentario.innerHTML=(`<img class="imagen" height="60" src="${results.picture.medium}" alt="">
-                                                    <div class="parrafos"><p class="parrafos__1">${results.name.first}</p>
-                                                    <p class="parrafos__2">${results.name.last}</p>
-                                                    <p class="parrafos__3">ACA va el comentario</p></div>
-                                                    `)
+                                        <div class="parrafos"><p class="parrafos__1">${results.name.first} ${results.name.last}</p>
+                                        <p class="parrafos__2">ACA va el comentario</p></div>
+                                        `)
             slideComentarios.appendChild(usuarioComentario);
         };
 
@@ -54,10 +52,9 @@ function datoApi(dato){
             const usuarioComentario = document.createElement("div")
             usuarioComentario.setAttribute("class","comentarios")
             usuarioComentario.innerHTML=(`<img class="imagen" height="60" src="${results.picture.medium}" alt="">
-                                                    <div class="parrafos"><p class="parrafos__1">${results.name.first}</p>
-                                                    <p class="parrafos__2">${results.name.last}</p>
-                                                    <p class="parrafos__3">ACA va el comentario</p></div>
-                                                    `)
+                                        <div class="parrafos"><p class="parrafos__1">${results.name.first} ${results.name.last}</p>
+                                        <p class="parrafos__2">ACA va el comentario</p></div>
+                                        `)
             slideComentarios.appendChild(usuarioComentario);
         };
 
@@ -67,9 +64,8 @@ function datoApi(dato){
             const usuarioComentario = document.createElement("div")
             usuarioComentario.setAttribute("class","comentarios")
             usuarioComentario.innerHTML=(`<img class="imagen" height="60" src="${results.picture.medium}" alt="">
-                                                    <div class="parrafos"><p class="parrafos__1">${results.name.first}</p>
-                                                    <p class="parrafos__2">${results.name.last}</p>
-                                                    <p class="parrafos__3">ACA va el comentario</p></div>
-                                                    `)
+                                        <div class="parrafos"><p class="parrafos__1">${results.name.first} ${results.name.last}</p>
+                                        <p class="parrafos__2">ACA va el comentario</p></div>
+                                        `)
             slideComentarios.appendChild(usuarioComentario);
         };

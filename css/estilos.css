@@ -25,6 +25,7 @@
     .principal__costado__titulo {display: flex;flex-direction: row;margin-left:5vw;margin-top: 2vw;}
     .principal__costado__carro {display: flex;flex-direction: row;justify-content: center;margin-bottom: 10px;}
     .principal__costado__buscador{display: flex;flex-direction: row;margin-bottom: 10px;margin-left:10px;}
+    .contadorCarrito{background-color: #F15412;color: aliceblue;border-radius: 15px;}
     .principal__costado__menu{display: flex;flex-direction: column;margin-left: 10px;}
     .principal__costado__productos__tienda{display: flex;flex-direction: row;justify-content: space-between;background-color:white;border: 4px;border-color:#F15412;border-style:dotted;}
     .principal__costado__productos__tienda__parrafos__1{color: #396EB0;}
@@ -53,6 +54,11 @@
     #offcanvasNavbarDropdown{color:#F15412;}
     .dropdown-item{color: #F15412;cursor: pointer;}
     .principal__costado__titulo{color: #396EB0;}
+    .comentarios{display: flex;flex-direction: column;align-items: center;background-color: #066163;}
+    .imagen{border-radius: 10px;border-style: solid;border-color: #F15412;}
+    .parrafos{display: flex;flex-direction: column;}
+    .parrafos__1{color: #CDBE78;}
+    .parrafos__2{color: #CDBE78;}
 
     #pie{display:grid;grid-template-rows:1fr;grid-template-columns:100% ;justify-items: center ;background-color:#066163;align-items: stretch;width: 100%;overflow-x: hidden;}
     .pie__menus {list-style: none;display: flex;flex-direction: row; justify-content:space-around;right:10px;cursor: pointer;}

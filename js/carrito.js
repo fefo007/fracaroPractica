@@ -54,10 +54,10 @@ function vaciarCarrito(){
         let carrito=JSON.parse(localStorage.getItem("carrito"))
         if(carrito!==[]&&carrito!==null){
             recargarCarro(carrito)
+            
         }
     }
         function recargarCarro(carrito){
-            
             const carro = document.getElementsByClassName("offcanvas-body")[0];
             carro.innerHTML="";
             carrito.productos.forEach(producto=>{
