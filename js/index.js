@@ -16,6 +16,8 @@ function funcionesMain(){
     filtarCategorias2()
     // PAGINACION
     botonesPaginas()
+    // COMENTARIOS EN ASIDE
+    usarApi()
 }
 funcionesCarro()
 function funcionesCarro(){
