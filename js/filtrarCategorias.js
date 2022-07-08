@@ -6,10 +6,11 @@ function filtarCategorias1(){
     const cat2=document.getElementsByClassName("dropdown-item")[1];
     const cat3=document.getElementsByClassName("dropdown-item")[2];
     const cat4=document.getElementsByClassName("dropdown-item")[3];
-    cat1.addEventListener("click",()=>{mostrarPlataforma("nintendo")});
-    cat2.addEventListener("click",()=>{mostrarPlataforma("pc")});
-    cat3.addEventListener("click",()=>{mostrarPlataforma("ps")});
-    cat4.addEventListener("click",()=>{mostrarPlataforma("xbox")});
+    const botones=document.getElementsByClassName("encabezado__pagina")[0];
+    cat1.addEventListener("click",()=>{mostrarPlataforma("nintendo");botones.innerHTML=""});
+    cat2.addEventListener("click",()=>{mostrarPlataforma("pc");botones.innerHTML=""});
+    cat3.addEventListener("click",()=>{mostrarPlataforma("ps");botones.innerHTML=""});
+    cat4.addEventListener("click",()=>{mostrarPlataforma("xbox");botones.innerHTML=""});
     }
 
     function filtarCategorias2(){
@@ -17,10 +18,11 @@ function filtarCategorias1(){
         const cat6=document.getElementsByClassName("dropdown-item")[5];
         const cat7=document.getElementsByClassName("dropdown-item")[6];
         const cat8=document.getElementsByClassName("dropdown-item")[7];
-        cat5.addEventListener("click",()=>{mostrarCategoria("Accesorio")});
-        cat6.addEventListener("click",()=>{mostrarCategoria("Consola")});
-        cat7.addEventListener("click",()=>{mostrarCategoria("Gift Card")});
-        cat8.addEventListener("click",()=>{mostrarCategoria("Videojuego")});
+        const botones=document.getElementsByClassName("encabezado__pagina")[0];
+        cat5.addEventListener("click",()=>{mostrarCategoria("Accesorio");botones.innerHTML=""});
+        cat6.addEventListener("click",()=>{mostrarCategoria("Consola");botones.innerHTML=""});
+        cat7.addEventListener("click",()=>{mostrarCategoria("Gift Card");botones.innerHTML=""});
+        cat8.addEventListener("click",()=>{mostrarCategoria("Videojuego");botones.innerHTML=""});
         }
 
 

@@ -3,7 +3,6 @@
 
 
 function agregarProducto (idProducto){
-    
     const producto =productos.find(producto=>producto.id==idProducto);
     carrito.productos.push(producto);
     localStorage.setItem('carrito',JSON.stringify(carrito))
@@ -21,7 +20,6 @@ function quitarProducto(idProduc){
 }
 
     function mostrarEnCarro (){
-
         const carroLateral = document.getElementsByClassName("offcanvas-body")[0];
         carroLateral.innerHTML="";
         carrito.productos.forEach(producto=>{
@@ -34,6 +32,7 @@ function quitarProducto(idProduc){
                                                     <div class:"principal__costado__productos__tienda__boton"><button onclick="quitarProducto('${id}') "><img height="20" src="./complementos/logos/borrar.webp" alt="borrar"></button></div>`)
             carroLateral.appendChild(productoEnCarro);
         });
+        
     }
 
 
@@ -43,7 +42,7 @@ function vaciarCarrito(){
         carrito.productos=[];
         vaciarStorageCarrito();
         mostrarEnCarro();
-        contadorProducto()
+        contadorProducto();
     })}
 
     function vaciarStorageCarrito(){
@@ -68,9 +67,10 @@ function vaciarCarrito(){
                                                         <div class="principal__costado__productos__tienda__parrafos"><p class="principal__costado__productos__tienda__parrafos__1">${nombre}</p>
                                                         <p class="principal__costado__productos__tienda__parrafos__2">${precio}</p></div>
                                                         <div class="principal__costado__productos__tienda__boton"><button class="principal__costado__productos__tienda__boton__1" onclick="quitarProducto('${id}') "><img height="20" src="./complementos/logos/borrar.webp" alt="borrar"></button></div>`)
-            
                 carro.appendChild(productoEnCarro);
-        })}
+                
+        })
+    }
 
 comprarCarro();
 function comprarCarro(){
