@@ -16,7 +16,8 @@ function quitarProducto(idProduc){
     carrito.productos.splice(indice,1);
     localStorage.setItem('carrito',JSON.stringify(carrito))
     mostrarEnCarro();
-    contadorProducto()
+    contadorProducto();
+
 }
 
     function mostrarEnCarro (){
@@ -32,7 +33,6 @@ function quitarProducto(idProduc){
                                                     <div class:"principal__costado__productos__tienda__boton"><button onclick="quitarProducto('${id}') "><img height="20" src="./complementos/logos/borrar.webp" alt="borrar"></button></div>`)
             carroLateral.appendChild(productoEnCarro);
         });
-        
     }
 
 
@@ -51,9 +51,12 @@ function vaciarCarrito(){
 
     function retirarCarritoStorage(){
         let carrito=JSON.parse(localStorage.getItem("carrito"))
+        let contador=JSON.parse(localStorage.getItem("contador"))
         if(carrito!==[]&&carrito!==null){
             recargarCarro(carrito)
             comprarCarro();
+            let cont=document.getElementsByClassName("contadorCarrito")[0]
+            cont.innerHTML=`${contador}`
         }
     }
         function recargarCarro(carrito){
@@ -88,6 +91,7 @@ function contadorProducto(){
     })
     let cont=document.getElementsByClassName("contadorCarrito")[0]
     cont.innerHTML=`${contador}`
+    localStorage.setItem('contador',JSON.stringify(contador))
 }
 
 
