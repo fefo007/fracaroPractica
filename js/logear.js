@@ -1,7 +1,6 @@
 
 
-registro();
-darBienvenida ();
+
 
 function registro (){
     const btn=document.getElementsByClassName("encabezado__logear__boton")[0];

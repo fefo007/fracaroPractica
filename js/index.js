@@ -3,6 +3,9 @@
 
 funcionesMain()
 function funcionesMain(){
+    // LOGEO DEL USUARIO
+    registro();
+    darBienvenida ();
     // MOSTRAR LOS PRIMEROS 9
     mostrarP(0,9);
     // BUSCAR PRODUCTOS

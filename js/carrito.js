@@ -30,7 +30,7 @@ function quitarProducto(idProduc){
             productoEnCarro.innerHTML=(`<img class="principal__costado__productos__tienda__imagen" height="80" src="${img}" alt="${nombre}">
                                                     <div class="principal__costado__productos__tienda__parrafos"><p class="principal__costado__productos__tienda__parrafos__1">${nombre}</p>
                                                     <p class="principal__costado__productos__tienda__parrafos__2">${precio}</p></div>
-                                                    <div class:"principal__costado__productos__tienda__boton"><button onclick="quitarProducto('${id}') "><img height="20" src="./complementos/logos/borrar.webp" alt="borrar"></button></div>`)
+                                                    <div class:"principal__costado__productos__tienda__boton"><button class="principal__costado__productos__tienda__boton__1" onclick="quitarProducto('${id}') "><img height="20" src="./complementos/logos/borrar.webp" alt="borrar"></button></div>`)
             carroLateral.appendChild(productoEnCarro);
         });
     }
@@ -40,14 +40,10 @@ function vaciarCarrito(){
     const botonVaciar=document.getElementsByClassName("botonescarrito__vaciarlo")[0]
     botonVaciar.addEventListener ("click",()=>{
         carrito.productos=[];
-        vaciarStorageCarrito();
+        localStorage.setItem('carrito',JSON.stringify(carrito))
         mostrarEnCarro();
         contadorProducto();
     })}
-
-    function vaciarStorageCarrito(){
-        localStorage.clear()
-    }
 
     function retirarCarritoStorage(){
         let carrito=JSON.parse(localStorage.getItem("carrito"))
@@ -71,9 +67,9 @@ function vaciarCarrito(){
                                                         <p class="principal__costado__productos__tienda__parrafos__2">${precio}</p></div>
                                                         <div class="principal__costado__productos__tienda__boton"><button class="principal__costado__productos__tienda__boton__1" onclick="quitarProducto('${id}') "><img height="20" src="./complementos/logos/borrar.webp" alt="borrar"></button></div>`)
                 carro.appendChild(productoEnCarro);
+                
         })
     }
-
 
 function comprarCarro(){
     const botonCompra=document.getElementsByClassName("botonescarrito__comprar")[0]
